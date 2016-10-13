@@ -1,0 +1,25 @@
+@import url('common.css');
+
+.main{width: 100%;height:450px;border-bottom:2px solid #eee;position:absolute;}
+.top{width:100%;height:37px;border-bottom: 2px solid #2bb8aa;padding: 10px 0}
+.wrapper{width:1000px;height:37px;margin:0 auto;}
+.wrapper a{width:54px;height:36px;background:url(../image/s0.meituan.png) no-repeat;background-position: -626px -722px;position: absolute;float: left}
+.wrapper span{float: right;color:#666666;margin-top: 8px;font-weight:bold;}
+.wrapper span a{float: left;background:none;color:white;width:45px;height: 22px;line-height:22px;background-color:#2EB8AB;margin-left:5px;border-radius: 5px;text-align: center}
+.center{width:1000px;height:390px;margin:0 auto;padding-top:40px;}
+.tolog{width:46px;height:26px;background:#2ebbad;position:relative;left:1000px;}
+
+.left_dis{margin-left: 40px;width:570px;height:320px;}
+.left_dis dl{width:570px;height:35px;margin-bottom: 35px}
+.left_dis dl dt{width:90px;height:35px;float:left;line-height: 35px;text-align: right;color:#333;}
+.left_dis dl dd{float:left;margin-left:18px;}
+.left_dis dl dd input{width:270px;height:35px;}
+.text_end{height:35px;line-height:35px;color:#999;margin-left:8px;font-size:14px;}
+.left_dis i{width:188px;height:34px;margin-left:110px;}
+.left_dis i input{background-color: #2ebaac;width:188px;height:34;color:white;line-height:35px;text-align:center;position:relative;top:-10px;border: none;font-size:16px;font-weight: 500}
+.left_dis p{margin-left:110px;}
+.left_dis p a{font-size:13px;color:#2bb8aa;}
+
+/* footer */
+.footer{width:1000px;margin:0 auto;}
+.footer p{text-align:center;color:#999;font-size:14px;position:relative;top:-15px;}

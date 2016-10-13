@@ -1,0 +1,43 @@
+@import url('common.css');
+
+.main{width:1000px;margin:40px auto}
+
+/* top */
+.top{width:20%;height: 85px;}
+.top_log{margin-left:60px;width:84px;height:55px;}
+.top_log a{width:84px;height:55px; background:url(../image/s0.meituan.png) no-repeat;background-position: -188px -781px;position: absolute;}
+/* center_left */
+.center_left{width :480px;margin-left: 60px;height:370px;}
+/* center_right */
+.center_right{width:460px;height:370px;}
+.login{width:275px;height:295px;padding-top:50px;padding-left:115px; }
+.login_type{color: #666;float: left;width:100%;}
+.login_type p{float: right;}
+.login_type p a{color: #666;font-size: 12px;}
+.login_type p a i{width:14px;height:14px;background:url(../image/s0.meituan.png) no-repeat;background-position:-597px -677px;float: right;margin-top: 4px}
+.text1,.text2{width:100%;height:33px;margin: 15px 0;border: 1px solid #aaaaaa}
+.text1 i{width:18px;height:18px;background:url(../image/s0.meituan.png) no-repeat;background-position:-1250px -635px;position: absolute;margin:6px;}
+.text1 input,.text2 input{height:24px;width:89%;padding:4.5px 0;margin-left:30px;border:none;} 
+.text1 input:focus ,.text2 input:focus {
+border-color: #2BB8AA;}
+.text2 i{width:18px;height:18px;background:url(../image/s0.meituan.png) no-repeat;background-position:-1250px -545px;position: absolute;margin:6px;}
+.week{color: #333333;font-size:13px;height:14px;margin-top:5px;position:relative;top:-2px;left:-3px;}
+.find{color:#2bb8aa;font-size:13px;position:relative;top:-2px;left:100px;}
+.tolog{width:100%;height:35px;margin:15px 0;}
+.tolog input{width:100%;height:35px;background-color:#2ec2b3;color:white;border:none; font-size:15px;font-weight: bold;border-radius: 3px}
+.tolog input:hover{background-color:#2DB7AA}
+.no_reg{font-size:15px;color:#666666;}
+.no_reg a{color:#2DB7AA;font-size:15px;}
+.hr{width:100%;height:0;border-bottom:1px solid #CCC;margin-top:20px;}
+.hr span{color:#666666;text-align: center;font-size:13px;position:relative;top: -13px;left:80px;background-color:white;font-weight:500;}
+.parter{width:60px;margin:20px auto 0;height:20px;}
+.qq{width:18px;height:18px;background:url(../image/s0.meituan.png) no-repeat;background-position:-1250px -509px;position:absolute;}
+.sina{width:18px;height:18px;background:url(../image/s0.meituan.png) no-repeat;background-position:-1250px -599px;position:absolute;margin-left:40px;}
+
+/* bottom */
+.bottom{width:100%;height:16px;border-top
+	:1px solid #eee;border-bottom:1px solid #eee;padding:16px 0;margin-top: 70px}
+.first{width:48px;height:16px;padding-right: 16px;border-right:1px solid #eee; float:left;}
+.first a,.bottom ul li a{color:#999;font-size:12px;}
+.first a:hover,.bottom ul li a:hover{text-decoration: underline;}
+.bottom ul li{width:48px;height:16px;padding:0 16px;border-right:1px solid #eee;float:left;}

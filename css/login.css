@@ -9,6 +9,8 @@
 /* center_left */
 .center_left{width :480px;margin-left: 60px;height:370px;}
 /* center_right */
+#warning{width: 255px;height: 18px;border: 1px #F5D8A7 solid;background-color: #FFF6DB;position: relative;top: -10px;padding:10px 10px;font-size: 13px;color:#666666;visibility:hidden; }
+#warning span{position:relative;top: -4px;}
 .center_right{width:460px;height:370px;}
 .login{width:275px;height:295px;padding-top:50px;padding-left:115px; }
 .login_type{color: #666;float: left;width:100%;}

@@ -16,27 +16,44 @@
 	for(var i=0;i<oP.length;i++){
 			oP[i].index=i;
 			oD[i].index=i;
-			oP[i].timer=null;
-		oP[i].onmouseover=function(){
+			
+			var time2=null;
+			var time1=null;
+			var that;
+		oP[i].onmouseenter=function(){
+			clearInterval(time1);
+			clearInterval(time2);
+			if(that!=undefined){
+			oD[that].style.display='none';
+			oP[that].style.backgroundColor='#fafafa';	
+		}
 			oD[this.index].style.display='block';
 			oP[this.index].style.backgroundColor='white';
 			
 		}
-		oP[i].onmouseout=function(){	
-			var that=this.index;
-
+		oP[i].onmouseleave=function(){	
+			that=this.index;
+			var timer1=null;
+			time1=setInterval(function(){
 			oD[that].style.display='none';
-			oP[that].style.backgroundColor='#fafafa'
+			oP[that].style.backgroundColor='#fafafa';				
+			},500);
+			
 			
 		}
 
-		oD[i].onmouseover=function(){
+		oD[i].onmouseenter=function(){
+			clearInterval(time1);
+			clearInterval(time2);
 			oD[this.index].style.display='block';
 		
 		}
-		oD[i].onmouseout=function(){
-
-			oD[this.index].style.display='none';
+		oD[i].onmouseleave=function(){
+			var that=this.index;
+			time2=setInterval(function(){
+			oD[that].style.display='none';
+			},500);
+		
 	}			
 
 	}

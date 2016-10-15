@@ -1,15 +1,19 @@
 		/*正则表达式校验输入框*/
 		var oSubmit=document.getElementById('submit');
+		var oForm=document.getElementById('form1');
+		var oWarm=document.getElementById('warning');
+		var oSpan=oWarm.getElementsByTagName('span')[0];
 		oSubmit.onclick=function(){
+
 			return checkName()&&checkPwd();
-			
 		};
 			function checkName(){
 			var name=document.getElementById('userName');
 			var re=/^\w{6,16}$/i;
 			
-			if(name.value.length==0){
-				alert('用户名不能为空');
+			if(name.value.length==0){	
+				oWarm.style.visibility="visible";
+				oSpan.innerHTML="请输入账号";
 				return false;
 			}else if(re.test(name.value)){
 				return true;
@@ -25,7 +29,10 @@
 			var re=/^\w{6,}$/i;
 
 			if(pwd.value.length==0){
-				alert('密码不能为空');
+				oWarm.style.visibility="visible";
+				//var text=document.createTextNode("请输入密码");
+				oSpan.innerHTML="请输入密码";
+			
 				return false;
 			}else if(re.test(pwd.value)){
 				return true;
@@ -35,12 +42,12 @@
 				return false;
 			}
 		}
-	function checkFrom(){
-		return checkName()&&checkPwd();
-	}
+	// function checkFrom(){
+	// 	return checkName()&&checkPwd();
+	// }
 
-/*	cookie
-*/	function setCookie(name,value,idate){
+/*	cookie*/
+	function setCookie(name,value,idate){
 			var oDay=new Date();
 	  		oDay.setDate(oDay.getDate()+idate);
 	  		document.cookie=name+"="+value+";expires="+oDay;
@@ -71,4 +78,6 @@
 		setCookie('user',oUser.value,7);
 	}
 	oUser.value=getCookie('user');
+
+/*设置警告框*/
 

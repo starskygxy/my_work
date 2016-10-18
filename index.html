@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<title>美团</title>
 	<link rel="icon" href="image/favicon.ico" sizes="16x16 32x32">
-</head>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
 <body>
 	<div class="log_reg">
 		<div class="top_frame">
@@ -41,11 +41,17 @@
 			<div class="heander_right">
 				<div class="center_top">
 					<div class="center_top_left">
-						<div class="topnav">
-							<select>
+						<div class="topnav">						
+<!-- 							<select >
 								<option value ="1">团购</option>
 								<option value ="2">商家</option>
-							</select>
+							</select> -->	
+							<div class="select">
+								<ul>
+								    <li style="" name="li1" value="团购">团购</li>
+								    <li style="" name="li2" value="商家">商家</li>
+								</ul>
+							</div>											
 							<div class="text">
 								<input type="text" name="" placeholder="请输入商品名称、地址等"></div>
 							<div class="search">
@@ -55,7 +61,7 @@
 					</div>
 					<div class="center_top_right">
 						<a href="#">
-							<img src="image/美团_05.jpg" alt="" style="width:196px;height:58px"></a>
+							<img src="image/美团_05.jpg" alt=""></a>
 					</div>
 				</div>
 				<div class="center_bottom">
@@ -94,15 +100,16 @@
 			<div class="content_left">
 				<div class="nav">全部分类</div>
 				<div class="clear"></div>
-				<p id="p1" class="left_nav">
-					<span class="nav_left">
+				<p id="p1" class="left_nav" >
+					<span class="nav_left" >
 						<a href="">美食</a>
 					</span>
 					<span class="nav_right">
-						<a href="">自助餐</a>
+						<a href="" class="floatl padl" >自助餐</a>
 						&nbsp;
-						<a href="">代金券</a>
-						&nbsp;>&nbsp;
+						<b class="floatr">></b>
+						<a href="" class="floatr ">代金券</a>
+						
 					</span>
 				</p>
 				<p id="p2" class="left_nav">
@@ -113,8 +120,9 @@
 
 					</span>
 					<span class="nav_right">
-						<a href="">经济型酒店</a>
-						&nbsp;>&nbsp;
+						<b class="floatr">></b>
+						<a href="" class="floatr">经济型酒店</a>
+						
 					</span>
 				</p>
 				<p id="p3" class="left_nav">
@@ -123,7 +131,7 @@
 						/
 						<a href="" >在线选座</a>
 					</span>
-					<span class="nav_right" style="width:40%;height:53px;" >>&nbsp;</span>
+					<span class="nav_right" style="width:40%;height:53px;" ><b class="floatr">></b></span>
 				</p>
 				<p id="p4" class="left_nav">
 					<span class="nav_left">
@@ -135,15 +143,16 @@
 						<a href="">休闲娱乐</a>
 					</span>
 					<span class="nav_right">
-						<a href="">足疗按摩</a>
+						<a href="" class="floatl padl">足疗按摩</a>
 						&nbsp;
-						<a href="">温泉</a>
-						&nbsp;>&nbsp;
+						<b class="floatr">></b>
+						<a href="" class="floatr">温泉</a>
+					
 					</span>
 				</p>
 				<p id="p6" class="left_nav">
 					<span class="nav_left">
-						<a href="">周边游</a>/
+						<a href="" class="floatl">周边游</a>/
 						<a href="">旅游</a>
 					</span>
 					<span class="nav_right">>&nbsp;</span>
@@ -153,10 +162,11 @@
 						<a href="" >生活服务</a>
 					</span>
 					<span class="nav_right" style="width:70%;height:53px;">
-						<a href="">婚纱摄影</a>
+						<a href="" class="floatl padl22">婚纱摄影</a>
 						&nbsp;
-						<a href="">个性写真</a>
-						&nbsp;>&nbsp;
+						<b class="floatr">></b>
+						<a href="" class="floatr">个性写真</a>
+					
 					</span>
 				</p>
 				<p id="p8" class="left_nav">
@@ -164,10 +174,11 @@
 						<a href="">购物</a>
 					</span>
 					<span class="nav_right">
-						<a href="">男装</a>
+						<a href="" class="floatl padl45">男装</a>
 						&nbsp;
-						<a href="">女装</a>
-						&nbsp;>&nbsp;
+						<b class="floatr">></b>
+						<a href="" class="floatr">女装</a>
+					
 					</span>
 				</p>
 				<p id="p9" class="left_nav">
@@ -175,10 +186,11 @@
 						<a href="">丽人</a>
 					</span>
 					<span class="nav_right">
-						<a href="">美发</a>
+						<a href="" class="floatl padl">美发</a>
 						&nbsp;
-						<a href="">美甲美瞳</a>
-						&nbsp;>&nbsp;
+						<b class="floatr">></b>
+						<a href="" class="floatr">美甲美瞳</a>
+						
 					</span>
 				</p>
 			</div>
@@ -713,6 +725,7 @@
 					<img src="image/美团_09.jpg" ></div>
 				<div class="clear"></div>
 				<!-- 测试 -->
+				<div style="width: 78.4%;float:left">
 				<div id="container">
 					<div class="pre arrow"></div>
 					<div class="next arrow"></div>
@@ -725,7 +738,9 @@
 							<li></li>
 						</ul>
 					</div>
+					
 					<div class="content1">
+					
 						<ul>
 							<li>
 								<div class="content_bottom_left">
@@ -881,9 +896,11 @@
 									</div>
 								</div></li>
 						</ul>
+						
 					</div>
 				</div>
-				<!-- 测试end -->
+				</div>
+				
 				<div class="content_bottom_right ">
 					<img src="image/美团_17.jpg" ></div>
 			</div>
@@ -891,5 +908,9 @@
 	</div>
 		<script src="js/carousel.js"></script>
 	<script src="js/index.js"></script>
+
+	<!-- 下拉框 -->
+
+
 </body>
 </html>

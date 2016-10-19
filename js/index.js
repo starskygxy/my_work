@@ -2,13 +2,28 @@
 /*	头部点亮星*/
 	var start=document.getElementById('start');
 	var img=start.getElementsByTagName('img')[0];
-
+	
 	start.onmouseover=function(){
-		img.src="image/start1.JPG";
+		 img.src="image/start1.JPG";
+		 a=3;
+		start.onclick=function(){
+		 var imgsrc=img.getAttribute('src');
+		if(imgsrc=='image/start2.JPG'){		
+			img.src="image/start1.JPG";	
+			a=0;
+		}
+		 if(imgsrc=='image/start1.JPG'){
+			img.src="image/start2.JPG";
+			a=1;
+		}
+	}
 	}
 	start.onmouseout=function(){
-		img.src="image/start2.JPG";
-	}
+		if(a==3)
+			img.src="image/start2.JPG";
+		}
+
+	
 
 	/*左侧隐藏菜单*/
 	var oP=document.getElementsByClassName('left_nav');
@@ -96,3 +111,17 @@
 		li2.style.backgroundColor='white';
 		ul.getElementsByTagName('li')[1].style.display = 'none';
 	}
+
+/*倒计时*/
+	$(function(){
+	var i = 1000;
+	$('#retroclockbox1').flipcountdown({
+		size:"sm"
+	});
+	var i = 1;
+	$('#retroclockbox_counter').flipcountdown({
+		tick:function(){
+			return i++;
+		}
+	});
+})

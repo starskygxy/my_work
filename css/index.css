@@ -13,7 +13,7 @@
 
 
 /* 头部*/
-.main{width: 1155px;margin: 0 auto;margin-bottom: 50px;} 
+.main{width: 1155px;margin: 0 auto;} 
 .header{width:100%;height:85px;padding-top:21px}
 .heander_left{width:21%;height:59px;float: left;margin-bottom:26px;}
 .heander_right{width:79%;height:72px;float: left;margin-bottom:13px;}
@@ -142,3 +142,27 @@ article{width:100%;}
 .deal-tile i{margin-top:12px;float: left;color: #999;margin-left: 100px;font-style:normal;font-size: 13px;font-weight: bold;}
 .deal-tile-bottom{width:100%;margin-top:40px;border-top: 1px #eee dotted;padding-top:10px;}
 .deal-tile-bottom span{height: 16px;background-color: #f76120;color:white;font-size:12px;line-height:12px;display: block;width:110px;line-height:16px;text-align:center;}
+
+/* 尾部 */
+footer{width:100%;margin-top: 18px;border-top:4px #eee double;padding-top: 20px;}
+.foot_left{width: 74%;margin-left:10px;float: left}
+.foot_right{width: 20%;border-left: 1px #eee solid;float: left;padding-left:32px;}
+.foot_left p{font-size: 14px;color: #666;font-weight: bold;padding-bottom: 18px}
+.foot_left li{padding-bottom:3px;}
+.foot_left li a{color: #999;font-size: 13px}
+.foot_left li a:hover{text-decoration: underline;}
+.foot_space{width:25%;float: left;}
+.foot_right p{color: #666;padding-bottom:5px;}
+.foot_right strong{color: #666;font-size: 19px}
+.foot_right span{color: #999;font-size: 12px;margin-left: -4px;margin-bottom: 27px}
+.notice{width:100%;margin-top: 27px}
+.notice p{font-size: 12px;color: #666;}
+.notice i{font-size: 12px;font-style:normal;}
+.notice i a{color: #2bb8aa;}
+.notice i a:hover{text-decoration: underline;}
+
+.rules{width:100%;border-top:1px solid #ddd;background-color: #f9f9f9;padding-top:27px;text-align: center;}
+.rules p{color: #999;font-size: 12px;padding-bottom: 30px}
+.rules p a{color: #999;font-size: 12px;}
+.rules img{position:relative;top:5px;padding-left:3px;}
+.end{margin-top:20px;padding-bottom:58px;}
